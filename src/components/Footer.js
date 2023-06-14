@@ -2,6 +2,7 @@
 function Footer() {
   return (
     <footer>
+        <menu>
         <li className="img-footer">
           <img
             src={require("../assets/footer-logo.png")}
@@ -68,6 +69,7 @@ function Footer() {
             </a>
           </ul>
         </li>
+    </menu>
     </footer>
   );
 }
