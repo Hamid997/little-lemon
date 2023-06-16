@@ -1,8 +1,8 @@
-
-function Footer() {
+import { Link } from "react-router-dom";
+export default function Footer() {
   return (
     <footer>
-        <menu>
+      <menu>
         <li className="img-footer">
           <img
             src={require("../assets/footer-logo.png")}
@@ -12,27 +12,22 @@ function Footer() {
         <li className="contact">
           <h1 className="footer-header">Navigation</h1>
           <ul className="footer-links">
-            <li to="/">Home</li>
-            <li to="/about">About</li>
-            <a
-              href={require("../assets/menu.webp")}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Menu
-            </a>
-            <li to="/reservations">Reservations</li>
-            <li to="/order">Order</li>
-            <li to="/login">Login</li>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/menu">Menu</Link>
+            <Link to="/reservations">Reservations</Link>
+            <Link to="/order">Order</Link>
+            <Link to="/login">Login</Link>
           </ul>
         </li>
+
         <li>
           <h1 className="footer-header">Contact</h1>
           <ul className="footer-links">
-            <li>2395 Maldove Way,</li>
-            <li>Chicago Illinois</li>
+            <li>1321 S Karlov Ave,</li>
+            <li>Chicago, Illinois(IL)</li>
             <br></br>
-            <li>(629)-243-6827</li>
+            <li>(770) 684-5545</li>
             <br></br>
             <a
               href="mailto: info@littlelemon.com"
@@ -44,7 +39,7 @@ function Footer() {
           </ul>
         </li>
         <li>
-          <h1 className="footer-header">Connect</h1>
+          <h1 className="footer-header">Social Media links</h1>
           <ul className="footer-links">
             <a
               href="https://www.facebook.com/thelittlelemonshop/"
@@ -69,9 +64,7 @@ function Footer() {
             </a>
           </ul>
         </li>
-    </menu>
+      </menu>
     </footer>
   );
 }
-
-export default  Footer;
